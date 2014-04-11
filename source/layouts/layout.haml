@@ -5,6 +5,9 @@
     %meta(charset="utf-8")
     = javascript_include_tag  "all"
     = stylesheet_link_tag "style"
+    = yield_content :head
 
   %body
+    = Haml::Engine.new(File.read("source/shared/header.haml")).render
     = yield
+    = Haml::Engine.new(File.read("source/shared/footer.haml")).render
