@@ -114,7 +114,10 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  coffee-script
+  haml
   middleman (~> 3.3.2)
   middleman-livereload (~> 3.1.0)
+  sass
   tzinfo-data
   wdm (~> 0.1.0)

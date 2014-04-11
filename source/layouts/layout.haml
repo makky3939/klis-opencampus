@@ -1,0 +1,10 @@
+!!!
+%html
+  %head
+    %title= yield(:title)
+    %meta(charset="utf-8")
+    = javascript_include_tag  "all"
+    = stylesheet_link_tag "style"
+
+  %body
+    = yield
