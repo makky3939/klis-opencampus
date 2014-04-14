@@ -1,0 +1,22 @@
+!!!
+%html
+  %head
+    %title= yield_content :title
+    / %meta(charset=>"utf-8")
+    / %meta(content= 'width=device-width, initial-scale=1.0', name= 'viewport')
+    / %meta(content= ', property= 'keywords')
+    / %eta(content= '', property= 'og:title')
+    / %meta(content= 'website', property= 'og:type')
+    / %meta(content= '', property= 'og:description')
+    / %meta(content= '', property= 'og:url')
+    / %meta(content= '', property= 'og:site_name')
+    / %link(href='image/favicon.ico', rel= 'shortcut icon')
+    / %link(href='image/apple-touch-icon.png', rel= 'apple-touch-icon')
+    = javascript_include_tag  "all"
+    = stylesheet_link_tag "style"
+    = yield_content :head
+
+  %body
+    = Haml::Engine.new(File.read("source/shared/header.haml")).render
+    = yield
+    = Haml::Engine.new(File.read("source/shared/footer.haml")).render
