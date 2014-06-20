@@ -23,7 +23,7 @@ gulp.task "coffee", ->
 
 gulp.task "concat", ->
   gulp.src "src/sass/*.sass"
-    .pipe concat "sass.sass"
+    .pipe concat "style.sass"
     .pipe gulp.dest "src/sass/tmp/"
 
 gulp.task "sass", ->
@@ -47,7 +47,7 @@ gulp.task "connect", connect.server({
     port: 3939
     livereload: true
     open:
-      browser: "Google Chrome"
+      browser: "Google Chrome Canary"
   })
 
 gulp.task "watch", ->
@@ -56,4 +56,4 @@ gulp.task "watch", ->
   gulp.watch "src/sass/**", ["concat", "sass"]
 
 # Default task
-gulp.task "default", ["clean", "bower", "concat", "sass", "coffee", "jade", "watch"]
+gulp.task "default", ["clean", "bower", "concat", "sass", "coffee", "jade", "connect", "watch"]
