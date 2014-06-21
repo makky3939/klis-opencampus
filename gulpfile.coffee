@@ -55,5 +55,7 @@ gulp.task "watch", ->
   gulp.watch "src/coffee/**", ["coffee"]
   gulp.watch "src/sass/**", ["concat", "sass"]
 
+
+## Tasks
 # Default task
 gulp.task "default", ["clean", "bower", "concat", "sass", "coffee", "jade", "connect", "watch"]
