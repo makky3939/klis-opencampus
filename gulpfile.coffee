@@ -27,7 +27,8 @@ gulp.task "concat", ->
     .pipe gulp.dest "src/sass/tmp/"
 
 gulp.task "sass", ->
-  gulp.src "src/sass/tmp/*.sass"
+  gulp.src "src/sass/*.sass"
+    .pipe concat "style.sass"
     .pipe plumber()
     .pipe sass()
     .pipe prefixer 'last 2 version'
@@ -53,9 +54,10 @@ gulp.task "connect", connect.server({
 gulp.task "watch", ->
   gulp.watch "src/jade/**", ["jade"]
   gulp.watch "src/coffee/**", ["coffee"]
-  gulp.watch "src/sass/**", ["concat", "sass"]
+  gulp.watch "src/sass/**", ["sass"]
 
 
 ## Tasks
 # Default task
-gulp.task "default", ["clean", "bower", "concat", "sass", "coffee", "jade", "connect", "watch"]
+gulp.task "default", ["clean"], ->
+  gulp.start "bower", "sass", "coffee", "jade", "connect", "watch"

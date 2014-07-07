@@ -20,7 +20,7 @@
   "exportsOverride": {
     "bootstrap": {
       "js": "dist/js/bootstrap.min.js",
-      "css": "dist/css/bootstrap.min.css",
+      "css": ["dist/css/bootstrap.min.css", "dist/css/bootstrap.css.map"],
       "fonts": "dist/fonts/*"
     },
     "jquery": {
