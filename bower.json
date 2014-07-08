@@ -1,7 +1,7 @@
 {
-  "name": "gulp",
+  "name": "klis-opencampus",
   "version": "0.0.2",
-  "homepage": "https://github.com/makky3939/gulp",
+  "homepage": "https://github.com/makky3939/klis-opencampus",
   "authors": [
     "Masaki Kobayashi <makky.4d6b.3f5@gmail.com>"
   ],
@@ -19,12 +19,12 @@
   },
   "exportsOverride": {
     "bootstrap": {
-      "js": "dist/js/bootstrap.min.js",
-      "css": ["dist/css/bootstrap.min.css", "dist/css/bootstrap.css.map"],
+      "js": "dist/js/bootstrap.js",
+      "css": "dist/css/*",
       "fonts": "dist/fonts/*"
     },
     "jquery": {
-      "js": "dist/jquery.min.js"
+      "js": "dist/jquery.js"
     }
   }
 }

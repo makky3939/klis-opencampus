@@ -1,4 +1,5 @@
 'use strict'
+
 # GoogleAnalytics Tracking code
 ((i, s, o, g, r, a, m) ->
   i['GoogleAnalyticsObject'] = r
