@@ -1,0 +1,22 @@
+#header.row
+  .container
+    h1 筑波大学 知識情報・図書館学類 学類説明会
+
+nav.navbar.navbar-inverse.header(role="navigation")
+  .container
+    .navbar-header
+      button.navbar-toggle(type="button", data-toggle="collapse", data-target="#navbar-collapse-1")
+        span.sr-only Toggle Navigation
+        - for i in [,,,]
+          span.icon-bar
+
+    #navbar-collapse-1.collapse.navbar-collapse
+      ul.nav.navbar-nav
+        li
+          a(href = "index.html") Top
+        li
+          a(href='2014.html') 2014年度
+        li
+          a(href='program.html') 企画紹介
+        //- li
+        //-   a(href='consultation.html') 相談コーナー
