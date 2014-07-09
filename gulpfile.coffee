@@ -14,12 +14,14 @@ connect  = connect()
 
 gulp.task "jade", ->
   gulp.src "src/jade/*.jade"
+    .pipe plumber()
     .pipe jade()
     .pipe gulp.dest "dst/"
     .pipe connect.reload()
 
 gulp.task "coffee", ->
   gulp.src "src/coffee/*.coffee"
+    .pipe plumber()
     .pipe coffee()
     .pipe gulp.dest "dst/js/"
     .pipe connect.reload()
