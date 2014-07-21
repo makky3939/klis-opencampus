@@ -31,7 +31,7 @@ gulp.task "sass", ->
     .pipe plumber()
     .pipe concat "style.sass"
     .pipe sass()
-    .pipe prefixer 'last 2 version'
+    .pipe prefixer 'last 3 version'
     .pipe mincss()
     .pipe gulp.dest "dst/css/"
     .pipe connect.reload()
