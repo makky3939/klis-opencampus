@@ -36,6 +36,10 @@ gulp.task "sass", ->
     .pipe gulp.dest "dst/css/"
     .pipe connect.reload()
 
+gulp.task "copy", ->
+  gulp.src "src/image/**", {base: 'src/image'}
+    .pipe gulp.dest "dst/image/"
+
 gulp.task "bower", ->
   bower.commands.install().on 'end', (installed) ->
     gulp.src([
@@ -71,7 +75,7 @@ gulp.task "watch", ->
 ## Tasks
 # Build Task
 gulp.task 'build', ['clean'], ->
-  gulp.start 'bower', 'sass', 'coffee', 'jade'
+  gulp.start 'bower', 'copy', 'sass', 'coffee', 'jade'
 
 # Server Task
 gulp.task 'server', ->
