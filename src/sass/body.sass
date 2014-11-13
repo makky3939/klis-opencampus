@@ -9,13 +9,16 @@ h4,
 h5,
 h6
   color: $DarkGray
+  margin: 0
 
-h3
-  margin-top: 32px
+ul
+  list-style-type: square
+  li
+    margin-bottom: 8px
+    ul li
+      margin-bottom: 2px
 
-.page-header
-  border-color: $Green
-
-.page-content
-  border-bottom: 1px solid $Gray
-  margin-bottom: 20px
+a
+  color: $Green
+  &:hover
+    color: $DarkGreen
