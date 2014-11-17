@@ -1,26 +1,27 @@
-nav.navbar.navbar-inverse.header(role="navigation")
-  .container
-    .navbar-header
-      button.navbar-toggle(type="button", data-toggle="collapse", data-target="#navbar-collapse-1")
-        span.sr-only Toggle Navigation
-        - for i in [,,,]
-          span.icon-bar
+.header
+  nav.navbar.navbar-inverse.navbar-klis(role="navigation")
+    .container
+      .navbar-header
+        button.navbar-toggle(type="button", data-toggle="collapse", data-target="#navbar-collapse")
+          span.sr-only Toggle Navigation
+          - for i in [,,,]
+            span.icon-bar
 
-    #navbar-collapse-1.collapse.navbar-collapse
-      ul.nav.navbar-nav
-        li
-          a(href="sitemap.html") Top
-        li
-          a(href='sitemap.html') 学類説明会について
-        li
-          a(href='sitemap.html') 過去の説明会
-        li
-          a(href='sitemap.html') 企画紹介
-        li
-          a(href='sitemap.html') マップ
-        li
-          a(href='sitemap.html') 用語集
-        li
-          a(href='sitemap.html') リンク
-        li
-          a(href='sitemap.html') サイトマップ
+      #navbar-collapse.collapse.navbar-collapse
+        ul.nav.navbar-nav
+          li
+            a(href="sitemap.html") Top
+          li
+            a(href='sitemap.html') 学類説明会について
+          li
+            a(href='sitemap.html') 過去の説明会
+          li
+            a(href='sitemap.html') 企画紹介
+          li
+            a(href='sitemap.html') マップ
+          li
+            a(href='sitemap.html') 用語集
+          li
+            a(href='sitemap.html') リンク
+          li
+            a(href='sitemap.html') サイトマップ
