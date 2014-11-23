@@ -1,4 +1,5 @@
 bower    = require 'bower'
+flatten  = require 'gulp-flatten'
 gulp     = require 'gulp'
 prefixer = require 'gulp-autoprefixer'
 clean    = require 'gulp-clean'
@@ -12,8 +13,9 @@ sass     = require 'gulp-ruby-sass'
 sequence = require 'run-sequence'
 
 gulp.task 'jade', ->
-  gulp.src 'src/jade/*.jade'
+  gulp.src ['src/jade/**/*.jade', '!src/jade/layout/**', '!src/jade/template/**']
     .pipe plumber()
+    .pipe flatten()
     .pipe jade()
     .pipe gulp.dest 'dst/'
 
