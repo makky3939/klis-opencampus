@@ -8,28 +8,31 @@ concat   = require 'gulp-concat'
 connect  = require 'gulp-connect'
 jade     = require 'gulp-jade'
 mincss   = require 'gulp-minify-css'
+notify   = require 'gulp-notify'
 plumber  = require 'gulp-plumber'
 sass     = require 'gulp-ruby-sass'
+uglify   = require 'gulp-uglify'
 sequence = require 'run-sequence'
 
 gulp.task 'jade', ->
   gulp.src ['src/jade/**/*.jade', '!src/jade/layout/**', '!src/jade/template/**']
-    .pipe plumber()
+    .pipe plumber {errorHandler: notify.onError('<%= error.message %>')}
     .pipe flatten()
     .pipe jade()
     .pipe gulp.dest 'dst/'
 
 gulp.task 'coffee', ->
   gulp.src 'src/coffee/*.coffee'
-    .pipe plumber()
+    .pipe plumber {errorHandler: notify.onError('<%= error.message %>')}
     .pipe coffee()
+    .pipe uglify {mangle: false}
     .pipe gulp.dest 'dst/js/'
 
 gulp.task 'sass', ->
   gulp.src 'src/sass/*.sass'
-    .pipe plumber()
+    .pipe plumber {errorHandler: notify.onError('<%= error.message %>')}
     .pipe concat 'style.sass'
-    .pipe sass()
+    .pipe sass {noCache: true}
     .pipe prefixer 'last 3 version'
     .pipe mincss()
     .pipe gulp.dest 'dst/css/'
