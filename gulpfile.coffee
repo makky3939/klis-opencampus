@@ -54,6 +54,25 @@ gulp.task 'bower', ->
     ]
       .pipe gulp.dest('./dst/lib/jquery/')
 
+    gulp.src [
+      'bower_components/lightbox2/css/lightbox.css'
+    ]
+      .pipe gulp.dest('./dst/lib/lightbox2/css')
+
+    gulp.src [
+      'bower_components/lightbox2/js/lightbox.min.js'
+      'bower_components/lightbox2/js/lightbox.min.map'
+    ]
+      .pipe gulp.dest('./dst/lib/lightbox2/js')
+
+    gulp.src [
+      'bower_components/lightbox2/img/close.png'
+      'bower_components/lightbox2/img/next.png'
+      'bower_components/lightbox2/img/prev.png'
+      'bower_components/lightbox2/img/loading.gif'
+    ]
+      .pipe gulp.dest('./dst/lib/lightbox2/img')
+
 gulp.task 'clean', ->
   gulp.src 'dst'
     .pipe clean()
@@ -69,6 +88,7 @@ gulp.task 'watch', ->
   gulp.watch 'src/jade/**', ['jade']
   gulp.watch 'src/coffee/**', ['coffee']
   gulp.watch 'src/sass/**', ['sass']
+  gulp.watch 'src/image/**', ['copy']
   gulp.watch 'src/**', ['livereload']
 
 gulp.task 'livereload', ->
