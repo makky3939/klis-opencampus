@@ -1,0 +1,22 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    coffee (0.0.5)
+      httparty
+      json_pure
+      thor
+    httparty (0.13.3)
+      json (~> 1.8)
+      multi_xml (>= 0.5.2)
+    json (1.8.1)
+    json_pure (1.8.1)
+    multi_xml (0.5.5)
+    sass (3.4.9)
+    thor (0.19.1)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  coffee
+  sass
