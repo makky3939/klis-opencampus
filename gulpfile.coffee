@@ -1,4 +1,5 @@
 bower    = require 'bower'
+flatten  = require 'gulp-flatten'
 gulp     = require 'gulp'
 prefixer = require 'gulp-autoprefixer'
 clean    = require 'gulp-clean'
@@ -7,27 +8,31 @@ concat   = require 'gulp-concat'
 connect  = require 'gulp-connect'
 jade     = require 'gulp-jade'
 mincss   = require 'gulp-minify-css'
+notify   = require 'gulp-notify'
 plumber  = require 'gulp-plumber'
 sass     = require 'gulp-ruby-sass'
+uglify   = require 'gulp-uglify'
 sequence = require 'run-sequence'
 
 gulp.task 'jade', ->
-  gulp.src 'src/jade/*.jade'
-    .pipe plumber()
+  gulp.src ['src/jade/**/*.jade', '!src/jade/layout/**', '!src/jade/template/**']
+    .pipe plumber {errorHandler: notify.onError('<%= error.message %>')}
+    .pipe flatten()
     .pipe jade()
     .pipe gulp.dest 'dst/'
 
 gulp.task 'coffee', ->
   gulp.src 'src/coffee/*.coffee'
-    .pipe plumber()
+    .pipe plumber {errorHandler: notify.onError('<%= error.message %>')}
     .pipe coffee()
+    .pipe uglify {mangle: false}
     .pipe gulp.dest 'dst/js/'
 
 gulp.task 'sass', ->
   gulp.src 'src/sass/*.sass'
-    .pipe plumber()
+    .pipe plumber {errorHandler: notify.onError('<%= error.message %>')}
     .pipe concat 'style.sass'
-    .pipe sass()
+    .pipe sass {noCache: true}
     .pipe prefixer 'last 3 version'
     .pipe mincss()
     .pipe gulp.dest 'dst/css/'
@@ -52,6 +57,25 @@ gulp.task 'bower', ->
     ]
       .pipe gulp.dest('./dst/lib/jquery/')
 
+    gulp.src [
+      'bower_components/lightbox2/css/lightbox.css'
+    ]
+      .pipe gulp.dest('./dst/lib/lightbox2/css')
+
+    gulp.src [
+      'bower_components/lightbox2/js/lightbox.min.js'
+      'bower_components/lightbox2/js/lightbox.min.map'
+    ]
+      .pipe gulp.dest('./dst/lib/lightbox2/js')
+
+    gulp.src [
+      'bower_components/lightbox2/img/close.png'
+      'bower_components/lightbox2/img/next.png'
+      'bower_components/lightbox2/img/prev.png'
+      'bower_components/lightbox2/img/loading.gif'
+    ]
+      .pipe gulp.dest('./dst/lib/lightbox2/img')
+
 gulp.task 'clean', ->
   gulp.src 'dst'
     .pipe clean()
@@ -67,6 +91,7 @@ gulp.task 'watch', ->
   gulp.watch 'src/jade/**', ['jade']
   gulp.watch 'src/coffee/**', ['coffee']
   gulp.watch 'src/sass/**', ['sass']
+  gulp.watch 'src/image/**', ['copy']
   gulp.watch 'src/**', ['livereload']
 
 gulp.task 'livereload', ->
