@@ -47,9 +47,20 @@ gulp.task 'bower', ->
       'bower_components/bootstrap/dist/css/bootstrap.min.css'
       'bower_components/bootstrap/dist/css/bootstrap.css.map'
       'bower_components/bootstrap/dist/js/bootstrap.min.js'
-      'bower_components/bootstrap/dist/fonts/*'
     ]
       .pipe gulp.dest('./dst/lib/bootstrap/')
+
+    gulp.src [
+      'bower_components/fontawesome/css/font-awesome.min.css'
+      'bower_components/fontawesome/css/font-awesome.css.map'
+    ]
+      .pipe gulp.dest('./dst/lib/fontawesome/')
+
+    gulp.src [
+      'bower_components/bootstrap/dist/fonts/*'
+      'bower_components/fontawesome/fonts/*'
+    ]
+      .pipe gulp.dest('./dst/lib/fonts/')
 
     gulp.src [
       'bower_components/jquery/dist/jquery.min.js'
