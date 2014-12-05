@@ -18,10 +18,18 @@ block contents
         .row
           .col-sm-3
             ul.list-group(class='nav nav-tabs')
-              a.list-group-item(href='#outline' data-toggle='tab') 概要
-              a.list-group-item(href='#program' data-toggle='tab') 企画紹介
-              a.list-group-item(href='#schedule' data-toggle='tab') スケジュール
-              a.list-group-item(href='#gallery' data-toggle='tab') ギャラリー
+              a.list-group-item(href='#outline' data-toggle='tab')
+                i.fa.fa-arrow-circle-right.fa-fw
+                |概要
+              a.list-group-item(href='#program' data-toggle='tab')
+                i.fa.fa-arrow-circle-right.fa-fw
+                |企画紹介
+              a.list-group-item(href='#schedule' data-toggle='tab')
+                i.fa.fa-arrow-circle-right.fa-fw
+                |スケジュール
+              a.list-group-item(href='#gallery' data-toggle='tab')
+                i.fa.fa-arrow-circle-right.fa-fw
+                |ギャラリー
 
           .col-sm-9
             .tab-content
@@ -56,6 +64,35 @@ block contents
 
               #program.tab-pane
                 h2 企画紹介
+                h3 学類長挨拶，教育課程・入試の説明
+                p 長谷川秀彦学類長が、学類の求める人物像や入試、カリキュラムについてご説明します。
+
+                h3 授業見学
+                p 当日、学生が実際に受けている授業を見学していただけます。高校までとは違う講義の雰囲気を体感してください。
+
+                h3 学類紹介
+                p 本学類の紹介を在学生や教員が劇により行います。
+
+                h3 パネルディスカッション
+                p 学生が入試体験談のプレゼンテーションを行います。
+
+                h3 相談コーナー
+                p AC入試から３年次編入まで、さまざまな学生があらゆる相談に答えます。 受験生活、学生生活、何でもお聞きください。 雑談が目的でも構いません。
+
+                h3 図書館見学
+                p 当日は終日、図書館情報学図書館を見学していただけます。キャンパスツアーでもまわりますので、じっくり見たくなったらご自由にお入りください。
+
+                h3 放映展示
+                p 講義の成果物や研究室の紹介動画などを展示します。
+
+                h3 研究室公開
+                p 大学のゼミとはどういう雰囲気なのか、どのようなことをするのかなど、実際に見学していただけます。
+
+                h3 スチューデントトーク
+                p 学生生活について、ディープな話をゆるーくプレゼンします。
+
+                h3 キャンパスツアー
+                p 知識情報・図書館学類の学生が主に利用する春日エリアをご案内します。
 
               #schedule.tab-pane
                 h2 スケジュール
@@ -64,128 +101,170 @@ block contents
                   a(href="campusmap.html") キャンパスマップ
                   |をご参照ください。
                 .schedule
-                  .col-xs-2.schedule-time
-                    h4 09:00
-                  .col-xs-10.schedule-content
-                    .col-md-4.well
-                      h4 受け付け開始
-                      p
-                        |期間: 09:00-
-                      p
-                        |場所(春日講堂)
-                    .col-md-4.well
-                      h4 動画放映・資料展示
-                      p
-                        |期間: 09:00-16:30
-                      p
-                        |場所(シンデレラ階段正面)
-                    .col-md-4.well
-                      h4 図書館見学
-                      p
-                        |期間: 09:00-17:00
-                      p
-                        |場所(図書館情報学図書館)
+                  .schedule-time
+                    span 09:00
+                  .row.schedule-contents
+                    .col-xs-12
+                      .col-md-4.well.schedule-content
+                        h4 受け付け開始
+                        p
+                          b 期間
+                          |09:00〜
+                        p
+                          b 場所
+                          |春日講堂
+                      .col-md-4.well.schedule-content
+                        h4 動画放映・資料展示
+                        p
+                          b 期間
+                          |09:00-16:30
+                        p
+                          b 場所
+                          |シンデレラ階段正面
+                      .col-md-4.well.schedule-content
+                        h4 図書館見学
+                        p
+                          b 期間
+                          |09:00-17:00
+                        p
+                          b 場所
+                          |図書館情報学図書館
 
-                  .col-xs-2.schedule-time
-                    h4 10:00
-                  .col-xs-10.schedule-content
-                    .col-md-4.well
-                      h4 学類長挨拶、教育課程・入試の説明
-                      p
-                        |期間: 10:00-11:10
-                      p
-                        |場所(春日講堂)
+                  .schedule-time
+                    span 10:00
+                  .row.schedule-contents
+                    .col-xs-12
+                      .col-md-4.well.schedule-content
+                        h4 学類長挨拶、教育課程・入試の説明
+                        p
+                          b 期間
+                          |10:00-11:10
+                        p
+                          b 場所
+                          |春日講堂
 
-                  .col-xs-2.schedule-time
-                    h4 11:00
-                  .col-xs-10.schedule-content
-                    .col-md-4.well
-                      h4 学類紹介
-                      p
-                        |期間: 11:10-12:10
-                      p
-                        |場所(春日講堂)
+                  .schedule-time
+                    span 11:00
+                  .row.schedule-contents
+                    .col-xs-12
+                      .col-md-4.well.schedule-content
+                        h4 学類紹介
+                        p
+                          b 期間
+                          |11:10-12:10
+                        p
+                          b 場所
+                          |春日講堂
 
-                  .col-xs-2.schedule-time
-                    h4 12:00
-                  .col-xs-10.schedule-content
-                    .col-md-4.well
-                      h4 お昼休み
-                      p
-                        |期間: 12:10-13:30
-                    .col-md-4.well
-                      h4 相談コーナー
-                      p
-                        |期間: 12:00-16:30
-                      p
-                        |場所(7A105)
-                    .col-md-4.well
-                      h4 研究室公開①
-                      p
-                        |期間: 12:00-13:00
-                      p
-                        |場所(7A101, 7A102, 7A103)
-                    .col-md-4.well
-                      h4 キャンパスツアー
-                      p
-                        |期間: 12:00-16:30
-                      p
-                        |場所(シンデレラ階段)
-                    .col-md-4.well
-                      h4 授業見学(知識発見基礎論)
-                      p
-                        |期間: 12:15-13:30 (7A205)
-                        br
-                        |,13:45-15:00 (7A202, 7A203, 7A206, 7A207)
-                      p
-                        |場所(7A205)
-                    .col-md-4.well
-                      h4 授業見学(データ表現と処理)
-                      p
-                        |期間: 12:15-15:00 ()
-                      p
-                        |場所(7C102)
+                  .schedule-time
+                    span 12:00
+                  .row.schedule-contents
+                    .col-xs-12
+                      .col-md-4.well.schedule-content
+                        h4 お昼休み
+                        p
+                          b 期間
+                          |12:10-13:30
+                      .col-md-4.well.schedule-content
+                        h4 相談コーナー
+                        p
+                          b 期間
+                          |12:00-16:30
+                        p
+                          b 場所
+                          |7A105
+                      .col-md-4.well.schedule-content
+                        h4 研究室公開①
+                        p
+                          b 期間
+                          |12:00-13:00
+                        p
+                          b 場所
+                          |7A101, 7A102, 7A103
+                      .col-md-4.well.schedule-content
+                        h4 キャンパスツアー
+                        p
+                          b 期間
+                          |12:00-16:30
+                        p
+                          b 場所
+                          |シンデレラ階段
+                      .col-md-4.well.schedule-content
+                        h4 授業見学
+                        p
+                          b 講義名
+                          |知識発見基礎論
+                        p
+                          b 期間
+                          |12:15-13:30 (7A205)
+                          br
+                          |,13:45-15:00 (7A202, 7A203, 7A206, 7A207)
+                        p
+                          b 場所
+                          |7A205
+                      .col-md-4.well.schedule-content
+                        h4 授業見学
+                        p
+                          b 講義名
+                          |データ表現と処理
+                        p
+                          b 期間
+                          |12:15-15:00
+                        p
+                          b 場所
+                          |7C102
 
-                  .col-xs-2.schedule-time
-                    h4 13:00
-                  .col-xs-10.schedule-content
-                    .col-md-4.well
-                      h4 パネルディスカッション
-                      p
-                        |期間: 13:30-14:30
-                      p
-                        |場所(春日講堂)
+                  .schedule-time
+                    span 13:00
+                  .row.schedule-contents
+                    .col-xs-12
+                      .col-md-4.well.schedule-content
+                        h4 パネルディスカッション
+                        p
+                          b 期間
+                          |13:30-14:30
+                        p
+                          b 場所
+                          |春日講堂
 
-                  .col-xs-2.schedule-time
-                    h4 14:00
-                  .col-xs-10.schedule-content
-                    .col-md-4.well
-                      h4 研究室公開②
-                      p
-                        |期間: 14:30-15:30
-                      p
-                        |場所(7A101, 7A102, 7A103)
+                  .schedule-time
+                    span 14:00
+                  .row.schedule-contents
+                    .col-xs-12
+                      .col-md-4.well.schedule-content
+                        h4 研究室公開②
+                        p
+                          b 期間
+                          |14:30-15:30
+                        p
+                          b 場所
+                          |7A101, 7A102, 7A103
 
-                  .col-xs-2.schedule-time
-                    h4 15:00
-                  .col-xs-10.schedule-content
-                    .col-md-4.well
-                      h4 スチューデントトーク
-                      p
-                        |期間: 15:40-16:30
-                      p
-                        |場所(7A106)
+                  .schedule-time
+                    span 15:00
+                  .row.schedule-contents
+                    .col-xs-12
+                      .col-md-4.well.schedule-content
+                        h4 スチューデントトーク
+                        p
+                          b 期間
+                          |15:40-16:30
+                        p
+                          b 場所
+                          |7A106
 
-                  .col-xs-2.schedule-time
-                    h4 16:00
-                  .col-xs-10.schedule-content
-                    .col-md-4.well
+                  .schedule-time
+                    span 16:00
+                  .row.schedule-contents
+                    .col-xs-12
+                      .col-md-4.well.schedule-content
 
-                  .col-xs-2.schedule-time
-                    h4 17:00
-                  .col-xs-10.schedule-content
-                    .col-md-4.well
-                      h4 説明会終了
+                  .schedule-time
+                    span 17:00
+                  .row.schedule-contents
+                    .col-xs-12
+                      .col-md-4.well.schedule-content
+                        h4 説明会終了
 
               #gallery.tab-pane
                 h2 当日の様子
