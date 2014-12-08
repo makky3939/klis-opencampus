@@ -10,28 +10,7 @@ block contents
         h1 Q&A
       .page-body
         .row
-          .col-sm-3
-            ul.list-group(class='nav nav-tabs')
-              a.list-group-item(href='#examination_ac' data-toggle='tab')
-                i.fa.fa-arrow-circle-right.fa-fw
-                |AC入試
-              a.list-group-item(href='#examination_candidates' data-toggle='tab')
-                i.fa.fa-arrow-circle-right.fa-fw
-                |推薦入試
-              a.list-group-item(href='#examination_general' data-toggle='tab')
-                i.fa.fa-arrow-circle-right.fa-fw
-                |一般入試
-              a.list-group-item(href='#examination_transfer' data-toggle='tab')
-                i.fa.fa-arrow-circle-right.fa-fw
-                |三年次編入
-              a.list-group-item(href='#enter_school' data-toggle='tab')
-                i.fa.fa-arrow-circle-right.fa-fw
-                |入学後
-              a.list-group-item(href='#other' data-toggle='tab')
-                i.fa.fa-arrow-circle-right.fa-fw
-                |その他
-
-          .col-sm-9
+          .col-sm-9.col-sm-push-3
             .tab-content
               .tab-pane.active
                 p 説明会の相談コーナーで受けた質問や、よくある質問などをまとめました。
@@ -156,6 +135,27 @@ block contents
 
               #other.tab-pane
                 h2 その他
+
+          .col-sm-3.col-sm-pull-9
+            ul.list-group(class='nav nav-tabs')
+              a.list-group-item(href='#examination_ac' data-toggle='tab')
+                i.fa.fa-arrow-circle-right.fa-fw
+                |AC入試
+              a.list-group-item(href='#examination_candidates' data-toggle='tab')
+                i.fa.fa-arrow-circle-right.fa-fw
+                |推薦入試
+              a.list-group-item(href='#examination_general' data-toggle='tab')
+                i.fa.fa-arrow-circle-right.fa-fw
+                |一般入試
+              a.list-group-item(href='#examination_transfer' data-toggle='tab')
+                i.fa.fa-arrow-circle-right.fa-fw
+                |三年次編入
+              a.list-group-item(href='#enter_school' data-toggle='tab')
+                i.fa.fa-arrow-circle-right.fa-fw
+                |入学後
+              a.list-group-item(href='#other' data-toggle='tab')
+                i.fa.fa-arrow-circle-right.fa-fw
+                |その他
 
 
       //- h2 よい息抜きの方法
