@@ -10,36 +10,27 @@ block contents
         h1 2014年 知識情報・図書館学類 学類説明会
 
       .page-body
-        .notice.notice-danger
-          h4 お知らせ
-          p
-            |この説明会は終了しました。
-            a(href='#gallery') 当日の様子を見る
         .row
-          .col-sm-3
-            ul.list-group(class='nav nav-tabs')
-              a.list-group-item(href='#outline' data-toggle='tab')
-                i.fa.fa-arrow-circle-right.fa-fw
-                |概要
-              a.list-group-item(href='#program' data-toggle='tab')
-                i.fa.fa-arrow-circle-right.fa-fw
-                |企画紹介
-              a.list-group-item(href='#schedule' data-toggle='tab')
-                i.fa.fa-arrow-circle-right.fa-fw
-                |スケジュール
-              a.list-group-item(href='#gallery' data-toggle='tab')
-                i.fa.fa-arrow-circle-right.fa-fw
-                |ギャラリー
-
-          .col-sm-9
+          .col-sm-9.col-sm-push-3
             .tab-content
               #outline.tab-pane.active
-                h2 概要
+                .notice.notice-danger
+                  h4 お知らせ
+                  p
+                    |この説明会は終了しました。
+                    |多数のご来場有難うございます。
+                  p
+                    |当日の様子は、
+                    a(href='#gallery' data-toggle='tab') ギャラリー
+                    |から、写真と動画でご覧頂くことが出来ます。
+
+                h2 説明会の概要
                 dl
                   dt 場所
                   dd
                     |筑波大学 春日エリア
-                    a(href='campusmap.html') MAP
+                    br
+                    a(href='maps.html' target='blank') 地図はコチラ
 
                   dt 日時
                   dd
@@ -51,16 +42,33 @@ block contents
 
                   dt 実施企画
                   dd
-                    a(href="programs.html" class="label label-success") 学類長挨拶・教育課程と入試の説明
-                    a(href="programs.html" class="label label-success") コント
-                    a(href="programs.html" class="label label-success") パネルディスカッション
-                    a(href="programs.html" class="label label-success") 相談コーナー
-                    a(href="programs.html" class="label label-success") 放映展示
-                    a(href="programs.html" class="label label-success") ゼミ見学
-                    a(href="programs.html" class="label label-success") スチューデントトーク
-                    a(href="programs.html" class="label label-success") キャンパスツアー
-                    a(href="programs.html" class="label label-success") 公開授業
-                    a(href="programs.html" class="label label-success") 図書館見学
+                    p
+                      |各企画の詳細については、
+                      a(href='#schedule' data-toggle='tab') 企画紹介
+                      |の項目をご覧ください
+                    span.label.label-success 学類長挨拶・教育課程と入試の説明
+                    span.label.label-success コント
+                    span.label.label-success パネルディスカッション
+                    span.label.label-success 相談コーナー
+                    span.label.label-success 放映展示
+                    span.label.label-success ゼミ見学
+                    span.label.label-success スチューデントトーク
+                    span.label.label-success キャンパスツアー
+                    span.label.label-success 公開授業
+                    span.label.label-success 図書館見学
+
+                hr
+                h2 ８月の筑波大学説明会との違い
+                p
+                  |　知識情報・図書館学類のパンフレットやポスターで宣伝しているのは、このページで紹介する説明会です。
+                  |このページで紹介する説明会では、本学類のみを見学することが出来ます。（8月の説明会は他学類の様子もご覧いただけます）
+                  |また、この説明会では学期中（通常授業期間）の様子が見学出来ます。
+                p
+                  |　８月に開催される説明会と、この説明会では内容が異なるので、どちらに興味があるかを考えてご参加ください。
+                  |なお、8月の大学説明会へは、
+                  a(href='http://www.tsukuba.ac.jp/admission/opencampus/index.html' target='_blank') 大学のウェブサイト
+                  |よりお申込をお願いいたします。
+
 
               #program.tab-pane
                 h2 企画紹介
@@ -98,7 +106,7 @@ block contents
                 h2 スケジュール
                 p
                   |企画の教室の場所については、
-                  a(href="campusmap.html") キャンパスマップ
+                  a(href="maps.html" target='_blank') キャンパスマップ
                   |をご参照ください。
                 .schedule
                   .schedule-time
@@ -271,25 +279,40 @@ block contents
                 #gallery
                   p クリックすることで拡大してご覧いただけます。
                   .photos
-                    a.col-sm-2.col-xs-4(href='image/2014/klis/001.png', data-lightbox="gallery")
-                      img.cover(src='image/2014/klis/001.png')
-                    a.col-sm-2.col-xs-4(href='image/2014/klis/002.png', data-lightbox="gallery")
-                      img.cover(src='image/2014/klis/002.png')
-                    a.col-sm-2.col-xs-4(href='image/2014/klis/003.png', data-lightbox="gallery")
-                      img.cover(src='image/2014/klis/003.png')
-                    a.col-sm-2.col-xs-4(href='image/2014/klis/004.png', data-lightbox="gallery")
-                      img.cover(src='image/2014/klis/004.png')
-                    a.col-sm-2.col-xs-4(href='image/2014/klis/005.png', data-lightbox="gallery")
-                      img.cover(src='image/2014/klis/005.png')
-                    a.col-sm-2.col-xs-4(href='image/2014/klis/006.png', data-lightbox="gallery")
-                      img.cover(src='image/2014/klis/006.png')
-                    a.col-sm-2.col-xs-4(href='image/2014/klis/007.png', data-lightbox="gallery")
-                      img.cover(src='image/2014/klis/007.png')
-                    a.col-sm-2.col-xs-4(href='image/2014/klis/008.png', data-lightbox="gallery")
-                      img.cover(src='image/2014/klis/008.png')
-                    a.col-sm-2.col-xs-4(href='image/2014/klis/009.png', data-lightbox="gallery")
-                      img.cover(src='image/2014/klis/009.png')
-                    a.col-sm-2.col-xs-4(href='image/2014/klis/010.png', data-lightbox="gallery")
-                      img.cover(src='image/2014/klis/010.png')
-                    a.col-sm-2.col-xs-4(href='image/2014/klis/011.png', data-lightbox="gallery")
-                      img.cover(src='image/2014/klis/011.png')
+                    a.col-sm-3.col-xs-4(href='image/2014/klis/001.png' data-lightbox="gallery")
+                      img.cover(src='image/2014/klis/001.min.png')
+                    a.col-sm-3.col-xs-4(href='image/2014/klis/002.png' data-lightbox="gallery")
+                      img.cover(src='image/2014/klis/002.min.png')
+                    a.col-sm-3.col-xs-4(href='image/2014/klis/003.png' data-lightbox="gallery")
+                      img.cover(src='image/2014/klis/003.min.png')
+                    a.col-sm-3.col-xs-4(href='image/2014/klis/004.png' data-lightbox="gallery")
+                      img.cover(src='image/2014/klis/004.min.png')
+                    a.col-sm-3.col-xs-4(href='image/2014/klis/005.png' data-lightbox="gallery")
+                      img.cover(src='image/2014/klis/005.min.png')
+                    a.col-sm-3.col-xs-4(href='image/2014/klis/006.png' data-lightbox="gallery")
+                      img.cover(src='image/2014/klis/006.min.png')
+                    a.col-sm-3.col-xs-4(href='image/2014/klis/007.png' data-lightbox="gallery")
+                      img.cover(src='image/2014/klis/007.min.png')
+                    a.col-sm-3.col-xs-4(href='image/2014/klis/008.png' data-lightbox="gallery")
+                      img.cover(src='image/2014/klis/008.min.png')
+                    a.col-sm-3.col-xs-4(href='image/2014/klis/009.png' data-lightbox="gallery")
+                      img.cover(src='image/2014/klis/009.min.png')
+                    a.col-sm-3.col-xs-4(href='image/2014/klis/010.png' data-lightbox="gallery")
+                      img.cover(src='image/2014/klis/010.min.png')
+                    a.col-sm-3.col-xs-4(href='image/2014/klis/011.png' data-lightbox="gallery")
+                      img.cover(src='image/2014/klis/011.min.png')
+
+          .col-sm-3.col-sm-pull-9
+            ul.list-group(class='nav nav-tabs')
+              a.list-group-item(href='#outline' data-toggle='tab')
+                i.fa.fa-arrow-circle-right.fa-fw
+                |概要
+              a.list-group-item(href='#program' data-toggle='tab')
+                i.fa.fa-arrow-circle-right.fa-fw
+                |企画紹介
+              a.list-group-item(href='#schedule' data-toggle='tab')
+                i.fa.fa-arrow-circle-right.fa-fw
+                |スケジュール
+              a.list-group-item(href='#gallery' data-toggle='tab')
+                i.fa.fa-arrow-circle-right.fa-fw
+                |ギャラリー
