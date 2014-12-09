@@ -10,197 +10,309 @@ block contents
         h1 2014年 知識情報・図書館学類 学類説明会
 
       .page-body
-        .notice.notice-danger
-          h4 お知らせ
-          p
-            |この説明会は終了しました。
-            a(href='#gallery') 当日の様子を見る
+        .row
+          .col-sm-9.col-sm-push-3
+            .tab-content
+              #outline.tab-pane.active
+                .notice.notice-danger
+                  h4 お知らせ
+                  p
+                    |この説明会は終了しました。
+                    |多数のご来場有難うございます。
+                  p
+                    |当日の様子は、
+                    a(href='#gallery' data-toggle='tab') ギャラリー
+                    |から、写真と動画でご覧頂くことが出来ます。
 
-        .page-header
-          h2 概要
-        .page-body
-          dl
-            dt 場所
-            dd
-              |筑波大学 春日エリア
-              a(href='campusmap.html') MAP
+                h2 説明会の概要
+                dl
+                  dt 場所
+                  dd
+                    |筑波大学 春日エリア
+                    br
+                    a(href='maps.html' target='blank') 地図はコチラ
 
-            dt 日時
-            dd
-              |7月23日(水曜日)
+                  dt 日時
+                  dd
+                    |7月23日(水曜日)
 
-            dt 時刻
-            dd
-              |10:00〜17:00(受付開始 09:00)
+                  dt 時刻
+                  dd
+                    |10:00〜17:00(受付開始 09:00)
 
-            dt 実施企画
-            dd
-              a(href="programs.html" class="label label-success") 学類長挨拶・教育課程と入試の説明
-              a(href="programs.html" class="label label-success") コント
-              a(href="programs.html" class="label label-success") パネルディスカッション
-              a(href="programs.html" class="label label-success") 相談コーナー
-              a(href="programs.html" class="label label-success") 放映展示
-              a(href="programs.html" class="label label-success") ゼミ見学
-              a(href="programs.html" class="label label-success") スチューデントトーク
-              a(href="programs.html" class="label label-success") キャンパスツアー
-              a(href="programs.html" class="label label-success") 公開授業
-              a(href="programs.html" class="label label-success") 図書館見学
+                  dt 実施企画
+                  dd
+                    p
+                      |各企画の詳細については、
+                      a(href='#schedule' data-toggle='tab') 企画紹介
+                      |の項目をご覧ください
+                    span.label.label-success 学類長挨拶・教育課程と入試の説明
+                    span.label.label-success コント
+                    span.label.label-success パネルディスカッション
+                    span.label.label-success 相談コーナー
+                    span.label.label-success 放映展示
+                    span.label.label-success ゼミ見学
+                    span.label.label-success スチューデントトーク
+                    span.label.label-success キャンパスツアー
+                    span.label.label-success 公開授業
+                    span.label.label-success 図書館見学
 
-        .page-header
-          h2 スケジュール
-        .page-body
-          p
-            |企画の教室の場所については、
-            a(href="campusmap.html") キャンパスマップ
-            |をご参照ください。
-          .schedule
-            .col-xs-2.schedule-time
-              h4 09:00
-            .col-xs-10.schedule-content
-              .col-md-4.well
-                h4 受け付け開始
+                hr
+                h2 ８月の筑波大学説明会との違い
                 p
-                  |期間: 09:00-
+                  |　知識情報・図書館学類のパンフレットやポスターで宣伝しているのは、このページで紹介する説明会です。
+                  |このページで紹介する説明会では、本学類のみを見学することが出来ます。（8月の説明会は他学類の様子もご覧いただけます）
+                  |また、この説明会では学期中（通常授業期間）の様子が見学出来ます。
                 p
-                  |場所(春日講堂)
-              .col-md-4.well
-                h4 動画放映・資料展示
-                p
-                  |期間: 09:00-16:30
-                p
-                  |場所(シンデレラ階段正面)
-              .col-md-4.well
-                h4 図書館見学
-                p
-                  |期間: 09:00-17:00
-                p
-                  |場所(図書館情報学図書館)
+                  |　８月に開催される説明会と、この説明会では内容が異なるので、どちらに興味があるかを考えてご参加ください。
+                  |なお、8月の大学説明会へは、
+                  a(href='http://www.tsukuba.ac.jp/admission/opencampus/index.html' target='_blank') 大学のウェブサイト
+                  |よりお申込をお願いいたします。
 
-            .col-xs-2.schedule-time
-              h4 10:00
-            .col-xs-10.schedule-content
-              .col-md-4.well
-                h4 学類長挨拶、教育課程・入試の説明
-                p
-                  |期間: 10:00-11:10
-                p
-                  |場所(春日講堂)
 
-            .col-xs-2.schedule-time
-              h4 11:00
-            .col-xs-10.schedule-content
-              .col-md-4.well
-                h4 学類紹介
-                p
-                  |期間: 11:10-12:10
-                p
-                  |場所(春日講堂)
+              #program.tab-pane
+                h2 企画紹介
+                h3 学類長挨拶，教育課程・入試の説明
+                p 長谷川秀彦学類長が、学類の求める人物像や入試、カリキュラムについてご説明します。
 
-            .col-xs-2.schedule-time
-              h4 12:00
-            .col-xs-10.schedule-content
-              .col-md-4.well
-                h4 お昼休み
-                p
-                  |期間: 12:10-13:30
-              .col-md-4.well
-                h4 相談コーナー
-                p
-                  |期間: 12:00-16:30
-                p
-                  |場所(7A105)
-              .col-md-4.well
-                h4 研究室公開①
-                p
-                  |期間: 12:00-13:00
-                p
-                  |場所(7A101, 7A102, 7A103)
-              .col-md-4.well
-                h4 キャンパスツアー
-                p
-                  |期間: 12:00-16:30
-                p
-                  |場所(シンデレラ階段)
-              .col-md-4.well
-                h4 授業見学(知識発見基礎論)
-                p
-                  |期間: 12:15-13:30 (7A205)
-                  br
-                  |,13:45-15:00 (7A202, 7A203, 7A206, 7A207)
-                p
-                  |場所(7A205)
-              .col-md-4.well
-                h4 授業見学(データ表現と処理)
-                p
-                  |期間: 12:15-15:00 ()
-                p
-                  |場所(7C102)
+                h3 授業見学
+                p 当日、学生が実際に受けている授業を見学していただけます。高校までとは違う講義の雰囲気を体感してください。
 
-            .col-xs-2.schedule-time
-              h4 13:00
-            .col-xs-10.schedule-content
-              .col-md-4.well
-                h4 パネルディスカッション
-                p
-                  |期間: 13:30-14:30
-                p
-                  |場所(春日講堂)
+                h3 学類紹介
+                p 本学類の紹介を在学生や教員が劇により行います。
 
-            .col-xs-2.schedule-time
-              h4 14:00
-            .col-xs-10.schedule-content
-              .col-md-4.well
-                h4 研究室公開②
-                p
-                  |期間: 14:30-15:30
-                p
-                  |場所(7A101, 7A102, 7A103)
+                h3 パネルディスカッション
+                p 学生が入試体験談のプレゼンテーションを行います。
 
-            .col-xs-2.schedule-time
-              h4 15:00
-            .col-xs-10.schedule-content
-              .col-md-4.well
-                h4 スチューデントトーク
+                h3 相談コーナー
+                p AC入試から３年次編入まで、さまざまな学生があらゆる相談に答えます。 受験生活、学生生活、何でもお聞きください。 雑談が目的でも構いません。
+
+                h3 図書館見学
+                p 当日は終日、図書館情報学図書館を見学していただけます。キャンパスツアーでもまわりますので、じっくり見たくなったらご自由にお入りください。
+
+                h3 放映展示
+                p 講義の成果物や研究室の紹介動画などを展示します。
+
+                h3 研究室公開
+                p 大学のゼミとはどういう雰囲気なのか、どのようなことをするのかなど、実際に見学していただけます。
+
+                h3 スチューデントトーク
+                p 学生生活について、ディープな話をゆるーくプレゼンします。
+
+                h3 キャンパスツアー
+                p 知識情報・図書館学類の学生が主に利用する春日エリアをご案内します。
+
+              #schedule.tab-pane
+                h2 スケジュール
                 p
-                  |期間: 15:40-16:30
-                p
-                  |場所(7A106)
+                  |企画の教室の場所については、
+                  a(href="maps.html" target='_blank') キャンパスマップ
+                  |をご参照ください。
+                .schedule
+                  .schedule-time
+                    span 09:00
+                  .row.schedule-contents
+                    .col-xs-12
+                      .col-md-4.well.schedule-content
+                        h4 受け付け開始
+                        p
+                          b 期間
+                          |09:00〜
+                        p
+                          b 場所
+                          |春日講堂
+                      .col-md-4.well.schedule-content
+                        h4 動画放映・資料展示
+                        p
+                          b 期間
+                          |09:00-16:30
+                        p
+                          b 場所
+                          |シンデレラ階段正面
+                      .col-md-4.well.schedule-content
+                        h4 図書館見学
+                        p
+                          b 期間
+                          |09:00-17:00
+                        p
+                          b 場所
+                          |図書館情報学図書館
 
-            .col-xs-2.schedule-time
-              h4 16:00
-            .col-xs-10.schedule-content
-              .col-md-4.well
+                  .schedule-time
+                    span 10:00
+                  .row.schedule-contents
+                    .col-xs-12
+                      .col-md-4.well.schedule-content
+                        h4 学類長挨拶、教育課程・入試の説明
+                        p
+                          b 期間
+                          |10:00-11:10
+                        p
+                          b 場所
+                          |春日講堂
 
-            .col-xs-2.schedule-time
-              h4 17:00
-            .col-xs-10.schedule-content
-              .col-md-4.well
-                h4 説明会終了
+                  .schedule-time
+                    span 11:00
+                  .row.schedule-contents
+                    .col-xs-12
+                      .col-md-4.well.schedule-content
+                        h4 学類紹介
+                        p
+                          b 期間
+                          |11:10-12:10
+                        p
+                          b 場所
+                          |春日講堂
 
-        .page-header
-          h2 当日の様子
-        #gallery.page-body
-          p クリックすることで拡大してご覧いただけます。
-          .photos
-            a.col-sm-2.col-xs-4(href='image/2014/klis/001.png', data-lightbox="gallery")
-              img.cover(src='image/2014/klis/001.png')
-            a.col-sm-2.col-xs-4(href='image/2014/klis/002.png', data-lightbox="gallery")
-              img.cover(src='image/2014/klis/002.png')
-            a.col-sm-2.col-xs-4(href='image/2014/klis/003.png', data-lightbox="gallery")
-              img.cover(src='image/2014/klis/003.png')
-            a.col-sm-2.col-xs-4(href='image/2014/klis/004.png', data-lightbox="gallery")
-              img.cover(src='image/2014/klis/004.png')
-            a.col-sm-2.col-xs-4(href='image/2014/klis/005.png', data-lightbox="gallery")
-              img.cover(src='image/2014/klis/005.png')
-            a.col-sm-2.col-xs-4(href='image/2014/klis/006.png', data-lightbox="gallery")
-              img.cover(src='image/2014/klis/006.png')
-            a.col-sm-2.col-xs-4(href='image/2014/klis/007.png', data-lightbox="gallery")
-              img.cover(src='image/2014/klis/007.png')
-            a.col-sm-2.col-xs-4(href='image/2014/klis/008.png', data-lightbox="gallery")
-              img.cover(src='image/2014/klis/008.png')
-            a.col-sm-2.col-xs-4(href='image/2014/klis/009.png', data-lightbox="gallery")
-              img.cover(src='image/2014/klis/009.png')
-            a.col-sm-2.col-xs-4(href='image/2014/klis/010.png', data-lightbox="gallery")
-              img.cover(src='image/2014/klis/010.png')
-            a.col-sm-2.col-xs-4(href='image/2014/klis/011.png', data-lightbox="gallery")
-              img.cover(src='image/2014/klis/011.png')
+                  .schedule-time
+                    span 12:00
+                  .row.schedule-contents
+                    .col-xs-12
+                      .col-md-4.well.schedule-content
+                        h4 お昼休み
+                        p
+                          b 期間
+                          |12:10-13:30
+                      .col-md-4.well.schedule-content
+                        h4 相談コーナー
+                        p
+                          b 期間
+                          |12:00-16:30
+                        p
+                          b 場所
+                          |7A105
+                      .col-md-4.well.schedule-content
+                        h4 研究室公開①
+                        p
+                          b 期間
+                          |12:00-13:00
+                        p
+                          b 場所
+                          |7A101, 7A102, 7A103
+                      .col-md-4.well.schedule-content
+                        h4 キャンパスツアー
+                        p
+                          b 期間
+                          |12:00-16:30
+                        p
+                          b 場所
+                          |シンデレラ階段
+                      .col-md-4.well.schedule-content
+                        h4 授業見学
+                        p
+                          b 講義名
+                          |知識発見基礎論
+                        p
+                          b 期間
+                          |12:15-13:30 (7A205)
+                          br
+                          |,13:45-15:00 (7A202, 7A203, 7A206, 7A207)
+                        p
+                          b 場所
+                          |7A205
+                      .col-md-4.well.schedule-content
+                        h4 授業見学
+                        p
+                          b 講義名
+                          |データ表現と処理
+                        p
+                          b 期間
+                          |12:15-15:00
+                        p
+                          b 場所
+                          |7C102
+
+                  .schedule-time
+                    span 13:00
+                  .row.schedule-contents
+                    .col-xs-12
+                      .col-md-4.well.schedule-content
+                        h4 パネルディスカッション
+                        p
+                          b 期間
+                          |13:30-14:30
+                        p
+                          b 場所
+                          |春日講堂
+
+                  .schedule-time
+                    span 14:00
+                  .row.schedule-contents
+                    .col-xs-12
+                      .col-md-4.well.schedule-content
+                        h4 研究室公開②
+                        p
+                          b 期間
+                          |14:30-15:30
+                        p
+                          b 場所
+                          |7A101, 7A102, 7A103
+
+                  .schedule-time
+                    span 15:00
+                  .row.schedule-contents
+                    .col-xs-12
+                      .col-md-4.well.schedule-content
+                        h4 スチューデントトーク
+                        p
+                          b 期間
+                          |15:40-16:30
+                        p
+                          b 場所
+                          |7A106
+
+                  .schedule-time
+                    span 16:00
+                  .row.schedule-contents
+                    .col-xs-12
+                      .col-md-4.well.schedule-content
+
+                  .schedule-time
+                    span 17:00
+                  .row.schedule-contents
+                    .col-xs-12
+                      .col-md-4.well.schedule-content
+                        h4 説明会終了
+
+              #gallery.tab-pane
+                h2 当日の様子
+                #gallery
+                  p クリックすることで拡大してご覧いただけます。
+                  .photos
+                    a.col-sm-3.col-xs-4(href='image/2014/klis/001.png' data-lightbox="gallery")
+                      img.cover(src='image/2014/klis/001.min.png')
+                    a.col-sm-3.col-xs-4(href='image/2014/klis/002.png' data-lightbox="gallery")
+                      img.cover(src='image/2014/klis/002.min.png')
+                    a.col-sm-3.col-xs-4(href='image/2014/klis/003.png' data-lightbox="gallery")
+                      img.cover(src='image/2014/klis/003.min.png')
+                    a.col-sm-3.col-xs-4(href='image/2014/klis/004.png' data-lightbox="gallery")
+                      img.cover(src='image/2014/klis/004.min.png')
+                    a.col-sm-3.col-xs-4(href='image/2014/klis/005.png' data-lightbox="gallery")
+                      img.cover(src='image/2014/klis/005.min.png')
+                    a.col-sm-3.col-xs-4(href='image/2014/klis/006.png' data-lightbox="gallery")
+                      img.cover(src='image/2014/klis/006.min.png')
+                    a.col-sm-3.col-xs-4(href='image/2014/klis/007.png' data-lightbox="gallery")
+                      img.cover(src='image/2014/klis/007.min.png')
+                    a.col-sm-3.col-xs-4(href='image/2014/klis/008.png' data-lightbox="gallery")
+                      img.cover(src='image/2014/klis/008.min.png')
+                    a.col-sm-3.col-xs-4(href='image/2014/klis/009.png' data-lightbox="gallery")
+                      img.cover(src='image/2014/klis/009.min.png')
+                    a.col-sm-3.col-xs-4(href='image/2014/klis/010.png' data-lightbox="gallery")
+                      img.cover(src='image/2014/klis/010.min.png')
+                    a.col-sm-3.col-xs-4(href='image/2014/klis/011.png' data-lightbox="gallery")
+                      img.cover(src='image/2014/klis/011.min.png')
+
+          .col-sm-3.col-sm-pull-9
+            ul.list-group(class='nav nav-tabs')
+              a.list-group-item(href='#outline' data-toggle='tab')
+                i.fa.fa-arrow-circle-right.fa-fw
+                |概要
+              a.list-group-item(href='#program' data-toggle='tab')
+                i.fa.fa-arrow-circle-right.fa-fw
+                |企画紹介
+              a.list-group-item(href='#schedule' data-toggle='tab')
+                i.fa.fa-arrow-circle-right.fa-fw
+                |スケジュール
+              a.list-group-item(href='#gallery' data-toggle='tab')
+                i.fa.fa-arrow-circle-right.fa-fw
+                |ギャラリー
