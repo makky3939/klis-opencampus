@@ -4,11 +4,92 @@ extends layout/default
 //-   title 
 
 block contents
-  //- .jumbotron
-  //-   .container
-  //-     p 知識情報・図書館学類
-  //-     h1 学類説明会
-  //-     p aaaa
+  .jumbotron
+    .container
+      p 筑波大学 情報学群
+      h1 知識情報・図書館学類
+      p 学類説明会 Webサイト
+    .container.jumbotron_footer
+      p
+        span.label.label-primary お知らせ
+        |2015年xx月xx日に、
+        a() hogehogehoge
+        |を開催します
+
+  .container
+    .row
+      .col-sm-6.col-sm-push-3
+        .tab-content
+          #hoge.tab-pane.active
+            h2 説明会について
+            p
+              |説明会と実行委員の紹介ページです。
+              span.line_marker 過去に開催された説明会
+              |の写真や動画もご覧いただけます。
+            .text-right
+              a.btn.btn-success(href='about.html')
+                |詳しく見る
+                i.fa.fa-arrow-circle-right.fa-fw
+
+            hr
+            h2 Q&A
+            p
+              |説明会の企画の１つである、
+              span.line_marker 相談コーナー
+              |で寄せられた入試に関する質問や、入学後の生活に関することなど、よくある質問をご紹介します。
+            .text-right
+              a.btn.btn-success(href='fqa.html')
+                |詳しく見る
+                i.fa.fa-arrow-circle-right.fa-fw
+
+            hr
+            h2 マップ
+            p
+              |キャンパスにお越しいただく際のアクセス方法と、キャンパス内の地図を紹介します。
+            .text-right
+              a.btn.btn-success(href='maps.html')
+                |詳しく見る
+                i.fa.fa-arrow-circle-right.fa-fw
+            
+            hr
+            h2 リンク
+            p
+              |大学や学類、学生組織などのWebサイトをご紹介します。
+            .text-right
+              a.btn.btn-success(href='links.html')
+                |詳しく見る
+                i.fa.fa-arrow-circle-right.fa-fw
+
+      .col-sm-3.col-sm-pull-6
+        ul.list-group(class='nav nav-tabs')
+          a.list-group-item(href='about.html')
+            i.fa.fa-arrow-circle-right.fa-fw
+            |説明会について
+          a.list-group-item(href='fqa.html')
+            i.fa.fa-arrow-circle-right.fa-fw
+            |Q&A
+          a.list-group-item(href='maps.html')
+            i.fa.fa-arrow-circle-right.fa-fw
+            |マップ
+          a.list-group-item(href='links.html')
+            i.fa.fa-arrow-circle-right.fa-fw
+            |リンク
+
+      .col-sm-3
+        .well
+          .text-center
+            p 動画
+            i.fa.fa-play.fa-fw.fa-2x
+            hr
+            p hogehoge
+
+        .well
+          .text-center
+            p 動画
+            i.fa.fa-play.fa-fw.fa-2x
+            hr
+            p hogehoge
+
 
   //- .container
   //-   h2 説明会について
