@@ -17,15 +17,20 @@
   ul li
     margin-bottom: 0
 
-  .navbar-brand 
-    color: $LightGray
-    &:first-letter
-      color: $Green
+  .navbar-brand
+    color: $Green
+    background: $LightGray
+    text-decoration: none
+    transition: background-color .16s
+    span
+      color: $DarkGray
 
   .navbar-brand:hover,
   .navbar-brand:focus 
-    color: #fff
-    background-color: transparent
+    background-color: $DarkGray
+    color: $White
+    span
+      color: $Green
 
   .navbar-text
     color: $LightGray
