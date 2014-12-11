@@ -12,24 +12,44 @@ block contents
     .container.jumbotron_footer
       p
         span.label.label-primary お知らせ
-        |2015年xx月xx日に、
-        a() hogehogehoge
-        |を開催します
+        |2014年08月23日に、
+        a(href='2014_sm_itf.html') 平成26年度 受験生のための筑波大学説明会
+        |を開催しました
 
   .container
     .row
-      .col-sm-6.col-sm-push-3
+      .col-sm-9.col-sm-push-3
         .tab-content
           #hoge.tab-pane.active
             h2 説明会について
             p
-              |説明会と実行委員の紹介ページです。
-              span.line_marker 過去に開催された説明会
-              |の写真や動画もご覧いただけます。
+              |知識情報・図書館学類では、筑波大学全体で開催される
+              span.line 受験生のための筑波大学説明会
+              |とは別に、知識情報・図書館学類のみで
+              span.line 知識情報･図書館学類 学類説明会
+              |を開催しています。
+              |知識情報･図書館学類 学類説明会は、授業期間中に開催されるため、授業の見学や研究室の公開といった企画が実施されることが特徴です。
+            p
+              |また、教育課程や入学試験の説明、学生によるパネルディスカッションや相談コーナーなどの企画を、受験生のための筑波大学説明会と知識情報･図書館学類 学類説明会の両方で実施しています。
+              |知識情報・図書館学類について詳しく知りたい方は知識情報･図書館学類 学類説明会、他学類についても知りたい方は受験生のための筑波大学説明会への参加をおすすめします。
+            p
+              |このWebサイトでは、
+              span.line これまでの説明会
+              |の写真や動画を掲載しています。
+              |説明会の様子や雰囲気を知ることが出来ます。
             .text-right
-              a.btn.btn-success(href='about.html')
+              a.btn.btn-success(href='open_campuses.html')
                 |詳しく見る
                 i.fa.fa-arrow-circle-right.fa-fw
+
+            hr
+            h2 実行委員について
+            p
+              |筑波大学 情報学群 知識情報・図書館学類 学類説明会委員会では、
+              span.line 受験生のための筑波大学説明会
+              |や
+              span.line 知識情報･図書館学類 学類説明会
+              |で実施する各企画の立案・準備や、当日の運営･進行を行っております。また、このWebサイトの設置・運営も実行委員が行っております。
 
             hr
             h2 Q&A
@@ -60,9 +80,9 @@ block contents
                 |詳しく見る
                 i.fa.fa-arrow-circle-right.fa-fw
 
-      .col-sm-3.col-sm-pull-6
+      .col-sm-3.col-sm-pull-9
         ul.list-group(class='nav nav-tabs')
-          a.list-group-item(href='about.html')
+          a.list-group-item(href='open_campuses.html')
             i.fa.fa-arrow-circle-right.fa-fw
             |説明会について
           a.list-group-item(href='fqa.html')
@@ -75,182 +95,12 @@ block contents
             i.fa.fa-arrow-circle-right.fa-fw
             |リンク
 
-      .col-sm-3
-        .well
+        .well.video
           .text-center
-            p 動画
-            i.fa.fa-play.fa-fw.fa-2x
-            hr
-            p hogehoge
+            p 平成26年度 知識情報・図書館学類 説明会
+          iframe(src="//www.youtube.com/embed/HpXjfxSDSYg?list=UU8OdyVduj0WZ8YjDqIHVm6w" frameborder="0" allowfullscreen)
 
-        .well
+        .well.video
           .text-center
-            p 動画
-            i.fa.fa-play.fa-fw.fa-2x
-            hr
-            p hogehoge
-
-
-  //- .container
-  //-   h2 説明会について
-  //-   hr
-  //-   .row
-  //-     .col-sm-4
-  //-       .well
-  //-         span.label.label-danger 終了
-  //-         .row
-  //-           .col-sm-12.well-heading-pic
-  //-             img.cover(src='image/2014/klis/004.png')
-  //-           .col-sm-12
-  //-             .well-body
-  //-               h4 知識情報・図書館学類 学類説明会
-  //-               p 07/23(水曜日) 10:00~ (受付開始 09:00)
-  //-               .text-right
-  //-                 a.btn.btn-success(href="2014_sm_klis.html") 詳しくはコチラ
-
-  //-     .col-sm-4
-  //-       .well
-  //-         span.label.label-danger 終了
-  //-         .row
-  //-           .col-sm-12.well-heading-pic
-  //-             img.cover(src='image/2014/klis/004.png')
-  //-           .col-sm-12
-  //-             .well-body
-  //-               h4 知識情報・図書館学類 学類説明会
-  //-               p 07/23(水曜日) 10:00~ (受付開始 09:00)
-  //-               .text-right
-  //-                 a.btn.btn-success(href="2014_sm_klis.html") 詳しくはコチラ
-
-  //-     .col-sm-4
-  //-       .well
-  //-         span.label.label-danger 終了
-  //-         .row
-  //-           .col-sm-12.well-heading-pic
-  //-             img.cover(src='image/2014/klis/004.png')
-  //-           .col-sm-12
-  //-             .well-body
-  //-               h4 知識情報・図書館学類 学類説明会
-  //-               p 07/23(水曜日) 10:00~ (受付開始 09:00)
-  //-               .text-right
-  //-                 a.btn.btn-success(href="2014_sm_klis.html") 詳しくはコチラ
-
-  //-   h2 企画紹介
-  //-   hr
-  //-   .row
-  //-     .col-sm-4
-  //-       .well
-  //-         .row
-  //-           .col-sm-12
-  //-             .well-body
-  //-               h4 知識情報・図書館学類 学類説明会
-  //-               p 07/23(水曜日) 10:00~ (受付開始 09:00)
-  //-               .text-right
-  //-                 a.btn.btn-success(href="2014_sm_klis.html") 詳しくはコチラ
-
-  //-     .col-sm-4
-  //-       .well
-  //-         .row
-  //-           .col-sm-12
-  //-             .well-body
-  //-               h4 知識情報・図書館学類 学類説明会
-  //-               p 07/23(水曜日) 10:00~ (受付開始 09:00)
-  //-               .text-right
-  //-                 a.btn.btn-success(href="2014_sm_klis.html") 詳しくはコチラ
-
-  //-     .col-sm-4
-  //-       .well
-  //-         .row
-  //-           .col-sm-12
-  //-             .well-body
-  //-               h4 知識情報・図書館学類 学類説明会
-  //-               p 07/23(水曜日) 10:00~ (受付開始 09:00)
-  //-               .text-right
-  //-                 a.btn.btn-success(href="2014_sm_klis.html") 詳しくはコチラ
-
-    //- .col-xs-12
-    //-   h2 イベント紹介
-    //-   .row
-    //-     .col-md-4.col-sm-6
-    //-       .thumbnail
-    //-         h3 
-    //-           |2014年
-    //-           br
-    //-           |知識情報・図書館学類
-    //-           br
-    //-           |学類説明会
-    //-         .caption
-    //-           h4 07/23(水曜日) 10:00~ (受付開始 09:00)
-    //-           p 当学類が主催する学類説明会です。当学類について詳しく知りたい方はぜひご参加下さい！
-    //-         .thumbnail-footer
-    //-           a(href="2014.html#klis" class="btn btn-success" role="button") 詳しくはコチラ
-    //-           a(href="http://klis.tsukuba.ac.jp/OpenCampus2014.html" class="btn btn-link" target="_brank") 学類WEB
-
-    //-     .col-md-4.col-sm-6
-    //-       .thumbnail
-    //-         h3 
-    //-           |平成26年度
-    //-           br
-    //-           |受験生のための
-    //-           br
-    //-           |筑波大学説明会
-    //-         .caption
-    //-           h4 08/23(水曜日) 10:00~
-    //-           p 筑波大学が主催する大学説明会です。各学類の特色や詳細が知りたい方はコチラもご参加下さい！
-    //-         .thumbnail-footer
-    //-           a(href="2014.html#itf" class="btn btn-success" role="button") 詳しくはコチラ
-    //-           a(href="http://www.tsukuba.ac.jp/admission/opencampus/" class="btn btn-link" target="_brank") 大学WEB
-
-    //-     .col-md-4.col-sm-6
-    //-       .thumbnail.thumbnail-comingsoon
-    //-         .caption
-    //-           p Coming Soon...
-
-
-    //- .col-xs-12
-    //-   h2 企画紹介
-    //-   .row
-    //-     .col-md-4.col-xs-6
-    //-       .panel.panel-default
-    //-         .panel-body
-    //-           h3 パネルディスカッション
-    //-           p 学生が入試体験談のプレゼンテーションを行います。
-
-    //-     .col-md-4.col-xs-6
-    //-       .panel.panel-default
-    //-         .panel-body
-    //-           h3 スチューデント・トーク
-    //-           p 学生生活について、ディープな話をゆるーくプレゼンします。
-
-    //-     .col-md-4.col-xs-6
-    //-       .panel.panel-default
-    //-         .panel-body
-    //-           h3 研究室公開
-    //-           p 大学のゼミとはどういう雰囲気なのか、どのようなことをするのかなど、実際に見学していただけます。
-
-    //-     .col-md-4.col-xs-6
-    //-       .panel.panel-default
-    //-         .panel-body
-    //-           h3 授業見学
-    //-           p 当日、学生が実際に受けている授業を見学していただけます。高校までとは違う講義の雰囲気を体感してください。
-
-    //-     .col-md-4.col-xs-6
-    //-       .panel.panel-default
-    //-         .panel-body
-    //-           h3 相談コーナー
-    //-           p AC入試から３年次編入まで、さまざまな学生があらゆる相談に答えます。 受験生活、学生生活、何でもお聞きください。 
-
-    //-     .col-md-4.col-xs-6
-    //-       .panel.panel-default
-    //-         .panel-body
-    //-           p その他の企画や各企画の詳細は、企画紹介ページをご参照下さい
-    //-         .panel-footer
-    //-           a(href='program.html' class="btn btn-success") 企画紹介ページ
-
-
-    //- .col-xs-12
-    //-   h2 過去の説明会
-    //-   .row
-    //-     .col-xs-12
-    //-       .panel.panel-default
-    //-         .panel-body
-    //-           p 過去の説明会を紹介します。(後日掲載予定)
+            p 平成26年度 知識情報・図書館学類 説明会
+          iframe(src="//www.youtube.com/embed/lBDwz-6sfug?list=UU8OdyVduj0WZ8YjDqIHVm6w" frameborder="0" allowfullscreen)
