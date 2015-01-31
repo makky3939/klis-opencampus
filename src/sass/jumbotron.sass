@@ -1,7 +1,7 @@
 .jumbotron
-  background: $Green
+  background-image: url(../image/jumbotron.png)
   color: $White
-  padding: 32px 0 0
+  padding: 160px 0 0
   p
     font-size: 24px
     margin: 8px 0
@@ -9,9 +9,19 @@
 
 .jumbotron_footer
   padding: 0
-  margin: 32px auto 0
+  margin: 64px auto 0
   text-align: center
   background: $DarkGray
   p
     font-size: 16px
     margin: 0 0 4px
+
+@media (max-width: 767px)
+  .jumbotron
+    padding: 24px 0 0
+
+  .jumbotron h1
+    font-size: 24px
+
+  .jumbotron_footer
+    margin: 32px auto 0

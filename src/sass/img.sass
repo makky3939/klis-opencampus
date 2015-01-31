@@ -1,0 +1,28 @@
+.img-circle
+  background: $LightGray
+  background-position: center center
+  background-repeat: no-repeat
+  background-size: contain
+  display: inline-block
+  height: 100%
+  width: 100%
+  border-radius: 50%
+  &:before
+    content: ""
+    display: block
+    padding-top: 100%
+
+.img-circles
+  .img-circle
+    width: 33%
+    box-sizing: border-box
+    border: 4px solid $White
+
+  .img-circle:nth-child(1)
+    background-image: url(../image/circle/000.png)
+
+  .img-circle:nth-child(2)
+    background-image: url(../image/circle/001.png)
+
+  .img-circle:nth-child(3)
+    background-image: url(../image/circle/002.png)
