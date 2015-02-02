@@ -21,12 +21,12 @@
 
 $ ->
   $(window).scroll ->
-    if $(this).scrollTop() > 400
-      unless $('.js-scroll_to_top').css('display') == 'none'
-        $('.js-scroll_to_top').fadeOut(600)
+    if $(this).scrollTop() < 400
+      unless $('.js-scroll_to_top').css('opacity') == '0'
+        $('.js-scroll_to_top').css('opacity', '0')
     else
-      unless $('.js-scroll_to_top').css('display') == 'block'
-        $('.js-scroll_to_top').fadeIn(600)
+      unless $('.js-scroll_to_top').css('opacity') == '1'
+        $('.js-scroll_to_top').css('opacity', '1')
     return this
 
   $('.js-scroll_to_top').on 'click', ->
