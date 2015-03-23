@@ -1,0 +1,169 @@
+extends layout/default
+
+block title
+  title 2015年 筑波大学 春の進学説明会 | 筑波大学 知識情報・図書館学類 学類説明会
+
+block contents
+  .container
+    .page
+      .page-header
+        h1 2015年 筑波大学 春の進学説明会
+
+      .page-body
+        .row
+          .col-sm-9.col-sm-push-3
+            .tab-content
+              #outline.tab-pane.active
+
+                h2 説明会の概要
+                dl
+                  dt 場所
+                  dd
+                    |筑波大学 東京キャンパス 文京校舎
+                    br
+                    |東京メトロ丸ノ内線「茗荷谷（みょうがだに）駅」徒歩3分
+
+                  dt 日時
+                  dd
+                    |4月1日 (水)
+
+                  dt 時刻
+                  dd
+                    |10:00～16:00
+
+                .notice.notice-success
+                  h4 お知らせ
+                  p
+                    |説明会への参加には申し込みが必要です。
+                  p
+                    a(href='http://daigakujc.jp/tsukuba/' target='_blank') コチラ
+                    |から申し込みの上、ご参加ください。
+
+                hr
+                h2 スケジュール
+                p ※ 情報学群のスケジュールです
+                .schedule
+                  .schedule-time
+                    span 10:00
+                  .row.schedule-contents
+                    .col-xs-12
+                      .col-md-4.well.schedule-content
+                        h4 情報学群全体の紹介
+                        p
+                          b 期間
+                          |10:00-10:10
+                          br
+                          span （西川博昭 情報学群長）
+                      .col-md-4.well.schedule-content
+                        h4 情報メディア創成学類の紹介
+                        p
+                          b 期間
+                          |10:10-11:20
+
+                  .schedule-time
+                    span 11:00
+                  .row.schedule-contents
+                    .col-xs-12
+                      .col-md-4.well.schedule-content
+                        h4 知識情報・図書館学類の説明
+                        p
+                          b 期間
+                          |11:20-
+                          br
+                          span （宇陀則彦 准教授）
+
+
+                  .schedule-time
+                    span 13:00
+                  .row.schedule-contents
+                    .col-xs-12
+                      .col-md-4.well.schedule-content
+                        h4 学生による受験体験・学生生活の紹介
+                        p
+                          b 期間
+                          |13:00-13:50
+                          br
+                          |受験体験、学類の特徴や科目の選択法、学生生活のことなどを、楽しくわかりやすく伝えます。(情報メディア創成学類と合同)
+
+                      .col-md-4.well.schedule-content
+                        h4 全体質疑 
+                        p
+                          b 期間
+                          |13:50-
+                          br
+                          |全体質疑終了後、個別相談もあります。
+                          br
+                          |※ (情報メディア創成学類と合同)
+
+                  .schedule-time
+                    span 14:00
+                  .row.schedule-contents
+                    .col-xs-12
+                      .col-md-4.well.schedule-content
+                        h4 情報科学類の紹介
+                        p
+                          b 期間
+                          |14:20-
+
+
+              //- #gallery.tab-pane
+              //-   h2 当日の様子
+              //-   #gallery
+              //-     //- p クリックすることで拡大してご覧いただけます。
+              //-     .photos
+              //-       a.col-sm-3.col-xs-4()
+              //-         //- a.col-sm-3.col-xs-4(href='image/2014/klis/001.png' data-lightbox="gallery")
+              //-         img.cover(src='image/2014/klis/001.min.png')
+              //-       a.col-sm-3.col-xs-4()
+              //-         //- a.col-sm-3.col-xs-4(href='image/2014/klis/002.png' data-lightbox="gallery")
+              //-         img.cover(src='image/2014/klis/002.min.png')
+              //-       a.col-sm-3.col-xs-4()
+              //-         //- a.col-sm-3.col-xs-4(href='image/2014/klis/003.png' data-lightbox="gallery")
+              //-         img.cover(src='image/2014/klis/003.min.png')
+              //-       a.col-sm-3.col-xs-4()
+              //-         //- a.col-sm-3.col-xs-4(href='image/2014/klis/004.png' data-lightbox="gallery")
+              //-         img.cover(src='image/2014/klis/004.min.png')
+              //-       a.col-sm-3.col-xs-4()
+              //-         //- a.col-sm-3.col-xs-4(href='image/2014/klis/005.png' data-lightbox="gallery")
+              //-         img.cover(src='image/2014/klis/005.min.png')
+              //-       a.col-sm-3.col-xs-4()
+              //-         //- a.col-sm-3.col-xs-4(href='image/2014/klis/006.png' data-lightbox="gallery")
+              //-         img.cover(src='image/2014/klis/006.min.png')
+              //-       a.col-sm-3.col-xs-4()
+              //-         //- a.col-sm-3.col-xs-4(href='image/2014/klis/007.png' data-lightbox="gallery")
+              //-         img.cover(src='image/2014/klis/007.min.png')
+              //-       a.col-sm-3.col-xs-4()
+              //-         //- a.col-sm-3.col-xs-4(href='image/2014/klis/008.png' data-lightbox="gallery")
+              //-         img.cover(src='image/2014/klis/008.min.png')
+              //-       a.col-sm-3.col-xs-4()
+              //-         //- a.col-sm-3.col-xs-4(href='image/2014/klis/009.png' data-lightbox="gallery")
+              //-         img.cover(src='image/2014/klis/009.min.png')
+              //-       a.col-sm-3.col-xs-4()
+              //-         //- a.col-sm-3.col-xs-4(href='image/2014/klis/010.png' data-lightbox="gallery")
+              //-         img.cover(src='image/2014/klis/010.min.png')
+              //-       a.col-sm-3.col-xs-4()
+              //-         //- a.col-sm-3.col-xs-4(href='image/2014/klis/011.png' data-lightbox="gallery")
+              //-         img.cover(src='image/2014/klis/011.min.png')
+
+                  hr
+                  .col-sm-6
+                    .text-center
+                      p スチューデントトークの様子1/2
+                      iframe(src="//www.youtube.com/embed/HpXjfxSDSYg?list=UU8OdyVduj0WZ8YjDqIHVm6w" frameborder="0" allowfullscreen)
+
+                  .col-sm-6
+                    .text-center
+                      p スチューデントトークの様子2/2
+                      iframe(src="//www.youtube.com/embed/lBDwz-6sfug?list=UU8OdyVduj0WZ8YjDqIHVm6w" frameborder="0" allowfullscreen)
+
+          .col-sm-3.col-sm-pull-9
+            ul.list-group(class='nav nav-tabs')
+              a.list-group-item(href='#outline' data-toggle='tab')
+                i.fa.fa-arrow-circle-right.fa-fw
+                |概要
+              //- a.list-group-item(href='#schedule' data-toggle='tab')
+              //-   i.fa.fa-arrow-circle-right.fa-fw
+              //-   |スケジュール
+              //- a.list-group-item(href='#gallery' data-toggle='tab')
+              //-   i.fa.fa-arrow-circle-right.fa-fw
+              //-   |ギャラリー
