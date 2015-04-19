@@ -14,6 +14,15 @@ block contents
           .col-sm-9.col-sm-push-3
             .tab-content
               #outline.tab-pane.active
+                .notice.notice-danger
+                  h4 お知らせ
+                  p
+                    |この説明会は終了しました。
+                    |多数のご来場有難うございます。
+                  p
+                    |当日の様子は、
+                    a(href='#gallery' data-toggle='tab') ギャラリー
+                    |から、写真と動画でご覧頂くことが出来ます。
 
                 h2 説明会の概要
                 dl
@@ -39,7 +48,24 @@ block contents
                     a(href='http://daigakujc.jp/tsukuba/' target='_blank') コチラ
                     |から申し込みの上、ご参加ください。
 
-                hr
+              #program.tab-pane
+                h2
+                  |知識情報・図書館学類の説明
+                  small （宇陀則彦 准教授）
+                p 11:20-12:00　（参加者：約100名）
+                p カリキュラムと入試の概要などについて、説明しました。
+
+                h2 学生による受験体験・学生生活の紹介
+                p 13:00-13:50　（参加者：約90名）
+                p 受験体験（AC・推薦・前期・後期・3年次編入）、受験の準備、卒業研究や学生生活のことなどについて、知識情報・図書館学類の説明（3名）、情報メディア創成学類の説明（3名）を行いました。
+
+                h2
+                  |全体質疑
+                  small (情報メディア創成学類と合同)
+                p 13:50-14:10
+                p 参加者の質問を受けた後、各学生がつくばでの生活（寮・アパート）についても説明しました。また、全体質疑終了後、別室で個別相談を行いました。
+
+              #schedule.tab-pane
                 h2 スケジュール
                 p ※ 情報学群のスケジュールです
                 .schedule
@@ -106,64 +132,41 @@ block contents
                           |14:20-
 
 
-              //- #gallery.tab-pane
-              //-   h2 当日の様子
-              //-   #gallery
-              //-     //- p クリックすることで拡大してご覧いただけます。
-              //-     .photos
-              //-       a.col-sm-3.col-xs-4()
-              //-         //- a.col-sm-3.col-xs-4(href='image/2014/klis/001.png' data-lightbox="gallery")
-              //-         img.cover(src='image/2014/klis/001.min.png')
-              //-       a.col-sm-3.col-xs-4()
-              //-         //- a.col-sm-3.col-xs-4(href='image/2014/klis/002.png' data-lightbox="gallery")
-              //-         img.cover(src='image/2014/klis/002.min.png')
-              //-       a.col-sm-3.col-xs-4()
-              //-         //- a.col-sm-3.col-xs-4(href='image/2014/klis/003.png' data-lightbox="gallery")
-              //-         img.cover(src='image/2014/klis/003.min.png')
-              //-       a.col-sm-3.col-xs-4()
-              //-         //- a.col-sm-3.col-xs-4(href='image/2014/klis/004.png' data-lightbox="gallery")
-              //-         img.cover(src='image/2014/klis/004.min.png')
-              //-       a.col-sm-3.col-xs-4()
-              //-         //- a.col-sm-3.col-xs-4(href='image/2014/klis/005.png' data-lightbox="gallery")
-              //-         img.cover(src='image/2014/klis/005.min.png')
-              //-       a.col-sm-3.col-xs-4()
-              //-         //- a.col-sm-3.col-xs-4(href='image/2014/klis/006.png' data-lightbox="gallery")
-              //-         img.cover(src='image/2014/klis/006.min.png')
-              //-       a.col-sm-3.col-xs-4()
-              //-         //- a.col-sm-3.col-xs-4(href='image/2014/klis/007.png' data-lightbox="gallery")
-              //-         img.cover(src='image/2014/klis/007.min.png')
-              //-       a.col-sm-3.col-xs-4()
-              //-         //- a.col-sm-3.col-xs-4(href='image/2014/klis/008.png' data-lightbox="gallery")
-              //-         img.cover(src='image/2014/klis/008.min.png')
-              //-       a.col-sm-3.col-xs-4()
-              //-         //- a.col-sm-3.col-xs-4(href='image/2014/klis/009.png' data-lightbox="gallery")
-              //-         img.cover(src='image/2014/klis/009.min.png')
-              //-       a.col-sm-3.col-xs-4()
-              //-         //- a.col-sm-3.col-xs-4(href='image/2014/klis/010.png' data-lightbox="gallery")
-              //-         img.cover(src='image/2014/klis/010.min.png')
-              //-       a.col-sm-3.col-xs-4()
-              //-         //- a.col-sm-3.col-xs-4(href='image/2014/klis/011.png' data-lightbox="gallery")
-              //-         img.cover(src='image/2014/klis/011.min.png')
-
-                  hr
-                  .col-sm-6
-                    .text-center
-                      p スチューデントトークの様子1/2
-                      iframe(src="//www.youtube.com/embed/HpXjfxSDSYg?list=UU8OdyVduj0WZ8YjDqIHVm6w" frameborder="0" allowfullscreen)
-
-                  .col-sm-6
-                    .text-center
-                      p スチューデントトークの様子2/2
-                      iframe(src="//www.youtube.com/embed/lBDwz-6sfug?list=UU8OdyVduj0WZ8YjDqIHVm6w" frameborder="0" allowfullscreen)
+              #gallery.tab-pane
+                h2 当日の様子
+                #gallery
+                  //- p クリックすることで拡大してご覧いただけます。
+                  .photos
+                    a.col-sm-3.col-xs-4()
+                      //- a.col-sm-3.col-xs-4(href='image/2014/klis/001.png' data-lightbox="gallery")
+                      img.cover(src='image/2015/spring/1.png')
+                    a.col-sm-3.col-xs-4()
+                      //- a.col-sm-3.col-xs-4(href='image/2015/spring/002.png' data-lightbox="gallery")
+                      img.cover(src='image/2015/spring/2.png')
+                    a.col-sm-3.col-xs-4()
+                      //- a.col-sm-3.col-xs-4(href='image/2015/spring/003.png' data-lightbox="gallery")
+                      img.cover(src='image/2015/spring/3.png')
+                    a.col-sm-3.col-xs-4()
+                      //- a.col-sm-3.col-xs-4(href='image/2015/spring/004.png' data-lightbox="gallery")
+                      img.cover(src='image/2015/spring/4.png')
+                    a.col-sm-3.col-xs-4()
+                      //- a.col-sm-3.col-xs-4(href='image/2015/spring/005.png' data-lightbox="gallery")
+                      img.cover(src='image/2015/spring/5.png')
+                    a.col-sm-3.col-xs-4()
+                      //- a.col-sm-3.col-xs-4(href='image/2015/spring/006.png' data-lightbox="gallery")
+                      img.cover(src='image/2015/spring/6.png')
 
           .col-sm-3.col-sm-pull-9
             ul.list-group(class='nav nav-tabs')
               a.list-group-item(href='#outline' data-toggle='tab')
                 i.fa.fa-arrow-circle-right.fa-fw
                 |概要
-              //- a.list-group-item(href='#schedule' data-toggle='tab')
-              //-   i.fa.fa-arrow-circle-right.fa-fw
-              //-   |スケジュール
-              //- a.list-group-item(href='#gallery' data-toggle='tab')
-              //-   i.fa.fa-arrow-circle-right.fa-fw
-              //-   |ギャラリー
+              a.list-group-item(href='#program' data-toggle='tab')
+                i.fa.fa-arrow-circle-right.fa-fw
+                |企画紹介
+              a.list-group-item(href='#schedule' data-toggle='tab')
+                i.fa.fa-arrow-circle-right.fa-fw
+                |スケジュール
+              a.list-group-item(href='#gallery' data-toggle='tab')
+                i.fa.fa-arrow-circle-right.fa-fw
+                |ギャラリー
